@@ -1,0 +1,47 @@
+footer {
+    @include tablet {
+        padding-bottom: 3em;
+    }
+}
+
+.footer-name,
+.toToplnk {
+    width: 49%;
+     display: inline-block;
+}
+
+.toToplnk{
+    text-align: right;
+    
+    @include tablet {
+        display: none;
+    }
+}
+
+.footer-nav {
+    display: none;
+    list-style-type: none; 
+    padding-left: 0; 
+    
+    @include tablet {
+        width: 50%;
+        display: inline-block;
+        text-align: right;
+    }
+}
+
+.footer-nav li {
+    @inlcude tablet {
+        display: inline-block;
+        text-align: right; 
+        margin-left: 12px;
+    }
+}
+
+.footer-nav a {
+    @include tablet {
+        font-size: .75em; 
+    }
+}
+
+

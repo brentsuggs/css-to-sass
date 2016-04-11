@@ -1,0 +1,134 @@
+section,
+.contact {
+    text-align: center;
+}
+
+section,
+.contact {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    
+    @include tablet {
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+}
+
+.wrap {
+    width: 90%;
+    max-width: 1050px; 
+    margin: 0 auto;
+}
+
+
+.student-info img {
+    width: 75%;
+    
+    @include tablet {
+        float: right;
+        width: 35%;
+    }
+}
+
+.student-info p {
+    
+    @include tablet {
+        float: left;
+        text-align: left;
+        vertical-align: top;
+        width: 60%;
+        font-size: 1.2em;
+        margin-top: 0;  
+    }
+    
+}
+
+.portfolio {
+    background: #fff; 
+}
+
+.panel {
+    padding-bottom: 1em;
+    
+    & img {
+       width: 100%; 
+    }
+    
+    @include tablet {
+        display: inline-block;
+        width: 47%; 
+        vertical-align: top; 
+        
+        & p { 
+            width: 75%;
+            margin-left: auto; 
+            margin-right: auto;
+        }
+    }
+    
+    @include desktop {
+        width: 32%;
+    }
+}
+
+.panel:nth-child(odd) {
+    @include tablet {
+        margin-left: 1%;
+    }
+    
+    @include desktop {
+        margin-left: 0%;
+    }
+}
+
+.panel:nth-child(even) {
+    @include tablet {
+        margin-right: 1%;
+    }
+    
+    @include desktop {
+        margin-right: 0%;
+    }
+}
+
+.panel:nth-child(3n+3) {
+    @include desktop {
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+}
+
+.contact p {
+    margin-bottom: 2em;
+    
+    @include tablet {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.125em;
+    }
+    
+    @include desktop {
+        width: 50%;
+    }
+}
+
+.contact span {
+    display: block;
+    margin-bottom: 1em;
+    
+    @include tablet {
+        font-size: 1.125em;
+    }
+}
+
+.contact a {
+    margin-left: 10px;
+    color: $primary-text-color;
+    font-weight: bold; 
+}
+
+.contact {
+    border-bottom: 1px solid #ddd;
+}
+

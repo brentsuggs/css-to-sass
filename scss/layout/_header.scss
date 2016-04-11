@@ -1,0 +1,85 @@
+header {
+    text-align: center;
+    padding-top: 1em;
+    
+    @inlcude desktop {
+        text-align: left;
+    }
+}
+
+/***** Navigation *****/  
+
+.header-name {
+    margin: 0; 
+    
+    @include desktop {
+        display: inline-block; 
+        vertical-align: top;
+        width: 49%; 
+        text-align: left;
+    }
+}
+
+.main-nav {
+    list-style-type: none; 
+    padding-left: 0; 
+    
+    @include tablet {
+        display: inline-block;
+        background-color: transparent; 
+    }
+    
+    @include desktop {
+        vertical-align: top;
+        text-align: right;
+        width: 50%; 
+    }
+}
+
+.main-nav a,
+.footer-nav a {
+    text-transform: uppercase;
+}
+
+.main-nav a {
+     width: 100%;
+     position: relative;
+}
+
+.main-nav a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.main-nav a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+.main-nav li {
+    background-color: #fff;
+    margin-bottom: .35em;
+    padding: 1em;
+    
+    @include tablet {
+        display: inline-block;
+        background-color: transparent; 
+    }
+    
+    @include desktop {
+        vertical-align: top;
+    }
+}
+
