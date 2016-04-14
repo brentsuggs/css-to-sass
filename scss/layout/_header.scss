@@ -20,17 +20,35 @@ header {
     }
 }
 
+
+.icon-menu2 {
+    display: block; 
+    font-size: 2em;
+    padding-top: 1em;
+    
+    &:hover {
+        cursor: pointer;
+    }
+    
+    @include tablet {
+        display: none;
+    }
+}
+
+
 .main-nav {
+    display: none;
     list-style-type: none; 
     padding-left: 0; 
     
     @include tablet {
         display: inline-block;
+        vertical-align: top;
         background-color: transparent; 
+        margin-top: 0;
     }
     
     @include desktop {
-        vertical-align: top;
         text-align: right;
         width: 50%; 
     }
@@ -69,7 +87,7 @@ header {
 
 
 .main-nav li {
-    background-color: #fff;
+    background-color: $secondary-bg-color;
     margin-bottom: .35em;
     padding: 1em;
     

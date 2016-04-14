@@ -2,7 +2,22 @@ $tablet-width   :   768px;
 $desktop-width  :   1024px; 
 
 $primary-bg-color   :   rgb(245,245,250);
+$secondary-bg-color :   #ffffff;
 $primary-text-color :   #666666;
 $accent-text-color  :   #444444;
 
+$base-font          :   14px Helvetica, Arial, sans-serif;
 
+
+
+%content-box {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+%wrap {
+    width: 90%;
+    max-width: 1050px; 
+    margin: 0 auto;
+}

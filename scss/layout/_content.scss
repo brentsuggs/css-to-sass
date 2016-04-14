@@ -1,12 +1,6 @@
 section,
 .contact {
-    text-align: center;
-}
-
-section,
-.contact {
-    padding-top: 2em;
-    padding-bottom: 2em;
+    @extend %content-box; 
     
     @include tablet {
         padding-top: 3em;
@@ -15,9 +9,7 @@ section,
 }
 
 .wrap {
-    width: 90%;
-    max-width: 1050px; 
-    margin: 0 auto;
+    @extend %wrap;
 }
 
 
@@ -44,7 +36,7 @@ section,
 }
 
 .portfolio {
-    background: #fff; 
+    background: $secondary-bg-color; 
 }
 
 .panel {

@@ -359,6 +359,17 @@ td,
 th {
   padding: 0; }
 
+section,
+.contact {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: center; }
+
+.wrap {
+  width: 90%;
+  max-width: 1050px;
+  margin: 0 auto; }
+
 /***** Base Styles *****/
 * {
   box-sizing: border-box; }
@@ -367,8 +378,7 @@ html,
 body {
   background-color: #f5f5fa;
   color: #666666;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 14px; }
+  font: 14px Helvetica, Arial, sans-serif; }
 
 h1,
 h2,
@@ -407,16 +417,28 @@ header {
       width: 49%;
       text-align: left; } }
 
+.icon-menu2 {
+  display: block;
+  font-size: 2em;
+  padding-top: 1em; }
+  .icon-menu2:hover {
+    cursor: pointer; }
+  @media screen and (min-width: 768px) {
+    .icon-menu2 {
+      display: none; } }
+
 .main-nav {
+  display: none;
   list-style-type: none;
   padding-left: 0; }
   @media screen and (min-width: 768px) {
     .main-nav {
       display: inline-block;
-      background-color: transparent; } }
+      vertical-align: top;
+      background-color: transparent;
+      margin-top: 0; } }
   @media screen and (min-width: 1024px) {
     .main-nav {
-      vertical-align: top;
       text-align: right;
       width: 50%; } }
 
@@ -448,7 +470,7 @@ header {
   transform: scaleX(1); }
 
 .main-nav li {
-  background-color: #fff;
+  background-color: #ffffff;
   margin-bottom: .35em;
   padding: 1em; }
   @media screen and (min-width: 768px) {
@@ -459,24 +481,11 @@ header {
     .main-nav li {
       vertical-align: top; } }
 
-section,
-.contact {
-  text-align: center; }
-
-section,
-.contact {
-  padding-top: 2em;
-  padding-bottom: 2em; }
-  @media screen and (min-width: 768px) {
-    section,
-    .contact {
-      padding-top: 3em;
-      padding-bottom: 3em; } }
-
-.wrap {
-  width: 90%;
-  max-width: 1050px;
-  margin: 0 auto; }
+@media screen and (min-width: 768px) {
+  section,
+  .contact {
+    padding-top: 3em;
+    padding-bottom: 3em; } }
 
 .student-info img {
   width: 75%; }
@@ -495,7 +504,7 @@ section,
     margin-top: 0; } }
 
 .portfolio {
-  background: #fff; }
+  background: #ffffff; }
 
 .panel {
   padding-bottom: 1em; }
@@ -581,15 +590,16 @@ section,
   padding-left: 0; }
   @media screen and (min-width: 768px) {
     .footer-nav {
-      width: 50%;
       display: inline-block;
+      width: 50%;
       text-align: right; } }
 
-@inlcude tablet {
+@media screen and (min-width: 768px) {
   .footer-nav li {
     display: inline-block;
     text-align: right;
     margin-left: 12px; } }
+
 @media screen and (min-width: 768px) {
   .footer-nav a {
     font-size: .75em; } }

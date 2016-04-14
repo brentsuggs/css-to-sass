@@ -7,7 +7,7 @@ footer {
 .footer-name,
 .toToplnk {
     width: 49%;
-     display: inline-block;
+    display: inline-block;
 }
 
 .toToplnk{
@@ -24,14 +24,14 @@ footer {
     padding-left: 0; 
     
     @include tablet {
-        width: 50%;
         display: inline-block;
+        width: 50%;
         text-align: right;
     }
 }
 
 .footer-nav li {
-    @inlcude tablet {
+    @include tablet {
         display: inline-block;
         text-align: right; 
         margin-left: 12px;
