@@ -8,12 +8,18 @@ $accent-text-color  :   #444444;
 
 $base-font          :   14px Helvetica, Arial, sans-serif;
 
+$student-img-width  :   75%;
+$panel-img-width    :   100%;
 
 
-%content-box {
-    padding-top: 2em;
-    padding-bottom: 2em;
-    text-align: center;
+%icon {
+    display: block; 
+    font-size: 2em;
+    padding-top: 1em;
+    
+    &:hover {
+        cursor: pointer;
+    }    
 }
 
 %wrap {

@@ -4,6 +4,10 @@
     @media screen and (min-width: #{$tablet-width}) {
         @content; 
         
+        %content-box-etd {
+            padding-top: 3em;
+            padding-bottom: 3em;
+        }
     }
 }
 
@@ -14,3 +18,15 @@
     }
 }
 
+
+
+@mixin content-box {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+    
+    @include tablet {
+        padding-top: 3em; 
+        padding-bottom: 3em;
+    }
+}

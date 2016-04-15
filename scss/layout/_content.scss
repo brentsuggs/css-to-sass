@@ -1,11 +1,7 @@
 section,
 .contact {
-    @extend %content-box; 
-    
-    @include tablet {
-        padding-top: 3em;
-        padding-bottom: 3em;
-    }
+
+    @include content-box;
 }
 
 .wrap {
@@ -14,7 +10,7 @@ section,
 
 
 .student-info img {
-    width: 75%;
+    width: $student-img-width;
     
     @include tablet {
         float: right;
@@ -43,7 +39,7 @@ section,
     padding-bottom: 1em;
     
     & img {
-       width: 100%; 
+       width: $panel-img-width; 
     }
     
     @include tablet {

@@ -2,7 +2,7 @@ header {
     text-align: center;
     padding-top: 1em;
     
-    @inlcude desktop {
+    @include desktop {
         text-align: left;
     }
 }
@@ -22,13 +22,7 @@ header {
 
 
 .icon-menu2 {
-    display: block; 
-    font-size: 2em;
-    padding-top: 1em;
-    
-    &:hover {
-        cursor: pointer;
-    }
+    @extend %icon;
     
     @include tablet {
         display: none;
