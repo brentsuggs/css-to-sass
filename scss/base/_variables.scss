@@ -5,12 +5,23 @@ $primary-bg-color   :   rgb(245,245,250);
 $secondary-bg-color :   #ffffff;
 $primary-text-color :   #666666;
 $accent-text-color  :   #444444;
+$border-color       :   #dddddd;
 
 $base-font          :   14px Helvetica, Arial, sans-serif;
+$base-font-size     :   1em;
+$base-font-weight   :   lighter; 
+$base-line-height   :   1.5em;
+$anchor-weight      :   bold; 
 
 $student-img-width  :   75%;
 $panel-img-width    :   100%;
 
+
+%paragragh {
+    font-weight: $base-font-weight ;
+    font-size: $base-font-size;
+    line-height: $base-line-height ;
+}
 
 %icon {
     display: block; 

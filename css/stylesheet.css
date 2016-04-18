@@ -359,6 +359,11 @@ td,
 th {
   padding: 0; }
 
+p {
+  font-weight: lighter;
+  font-size: 1em;
+  line-height: 1.5em; }
+
 .icon-menu2 {
   display: block;
   font-size: 2em;
@@ -391,11 +396,6 @@ h2 {
   text-transform: uppercase;
   font-size: 1em;
   margin-bottom: 2em; }
-
-p {
-  font-weight: lighter;
-  font-size: 1em;
-  line-height: 1.5em; }
 
 a {
   color: #444444;
@@ -568,7 +568,7 @@ section,
   font-weight: bold; }
 
 .contact {
-  border-bottom: 1px solid #ddd; }
+  border-bottom: 1px solid #dddddd; }
 
 @media screen and (min-width: 768px) {
   footer {
@@ -603,7 +603,7 @@ section,
 
 @media screen and (min-width: 768px) {
   .footer-nav a {
-    font-size: .75em; } }
+    font-size: 0.75em; } }
 
 .clearfix::before, .clearfix::after {
   content: "";
